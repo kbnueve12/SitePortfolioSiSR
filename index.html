@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <meta type="description" content="Ceci est mon portfolio étudiant" />
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flaticon/2.1.4/css/flaticon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <button id="menu-toggle">
+        <i class="menu-icon"></i>
+    </button>
+
+    <!---Header-->
+    <header>
+        <div class="container-nav">
+            <nav class="entete">
+                <div class="logo"><span>P</span>ORTFOLIO</div>
+
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a href="#accueil" class="nav-link"><i class="fas fa-home"></i> Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#bts-sio" class="nav-link"><i class="fas fa-graduation-cap"></i> BTS SIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profil" class="nav-link"><i class="fas fa-user"></i> Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#parcours" class="nav-link"><i class="fas fa-project-diagram"></i> Parcours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#stages" class="nav-link"><i class="fas fa-network-wired"></i> Stages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#competences" class="nav-link"><i class="fas fa-project-diagram"></i> Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projets" class="nav-link"><i class="fas fa-tools"></i> Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Épreuves</i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Épreuve E4</a></li>
+                            <li><a href="#">Épreuve E5</a></li>
+                            <li><a href="img/6- Annexe 6-1 - Tableau de synthèse - Epreuve E4 - BTS SIO 2023 (2)-2.pdf" target="_blank">Tableau de synthèses</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#veille" class="nav-link"><i class="fas fa-search"></i> Veille Technologique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const header = document.querySelector('header');
+        const navLinks = document.querySelectorAll('.navbar .nav-link');
+
+        // Toggle la barre latérale avec le bouton menu-toggle
+        menuToggle.addEventListener('click', function(event) {
+            header.classList.toggle('active');
+            menuToggle.classList.toggle('active'); // Ajoute ou retire 'active' pour changer l'icône
+        });
+
+        // Masquer la barre latérale en cliquant sur un lien de navigation
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                header.classList.remove('active');
+                menuToggle.classList.remove('active'); // Retire 'active' de menu-toggle pour revenir à l'icône burger
+            });
+        });
+    });
+    </script>
+    
+<!--=== Section Accueil === -->
+<div id="accueil" class="accueil">
+    <section class="titre">
+        <h1 class="prenom-nom">Chaoui Haithem</h1>
+        <h3 class="etude">étudiant en BTS SIO - OPTION SISR</h3>
+
+        <h4> <span class="auto-typing"></span></h4>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            let typed = new Typed(' .auto-typing', {
+                strings: ['Bienvenue sur mon Portfolio'],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true,
+                fadeOut: true,
+                fadeOutClass: 'typed-fade-out',
+                fadeOutDelay: 500,
+            }) 
+        </script>
+
+        <div class="btn-box">
+            <a href="img/HAITHEM CHAOUI Info.pdf" target="_blank">
+                <button class="btn-1">Consulter CV</button>
+            </a>
+            <a href="img/HAITHEM CHAOUI Info.pdf" download="CV Haithem Chaoui">
+                <button class="btn-2">Télécharger CV</button>
+            </a>
+        </div>
+
+    </section>
+
+</div>
+
+<main id="main">
+    <!----- Section BTS SIO ----->
+    <section id="bts-sio">
+        <div class="container">
+            <div class="filiere">
+                <h2 class="section-titre">Le BTS SIO</h2>
+                <p class="flr-sio">
+                    <span class="text-alinea">Le</span> <b>Brevet de Technicien Supérieur - Services Informatiques aux Organisations</b> est un diplôme en deux ans post-bac, résolument concret, destiné à une intégration rapide sur le marché du travail. 
+                    Pour ceux qui le souhaitent, il est possible de continuer ses études un an ou plus. Le BTS SIO prépare les étudiants à devenir des techniciens spécialisés dans le développement, l’administration et la gestion des systèmes d’information.
+                </p>
+
+                <h4 class="spe">Le BTS SIO propose deux options :</h4>
+                <div class="box-option">
+                    <div class="option">
+                        <h3 class="sisr"><i class="fa-solid fa-network-wired"></i>OPTION SISR</h3>
+                        <p class="box-sisr">
+                            Le BTS SISR (Services Informatiques aux Organisations, option Solutions d'Infrastructure, Systèmes et Réseaux) forme les étudiants dans trois domaines :
+                            Support et mise à disposition de services informatiques : l'étudiant apprend à gérer les services informatiques, répondre aux incidents, et accompagner la transformation numérique tout en maintenant l'employabilité.
+                            Cybersécurité : formation à sécuriser les infrastructures, analyser les risques et protéger les données et l'identité numérique de l'entreprise.
+                            Administration des systèmes et réseaux : compétences en conception, installation, déploiement, administration et supervision des infrastructures réseau.
+                        </p>
+                        <h4 class="dbch">Voici les débouchés avec le BTS SIO option SISR :</h4>
+                        <ul class="opt-dbch">
+                            <li class="dbch-sisr">Administrateur système, réseau et sécurité</li>
+                            <li class="dbch-sisr">Chef de projet logiciel et réseau</li>
+                            <li class="dbch-sisr">Concepteur de systèmes d'information</li>
+                            <li class="dbch-sisr">Technicien de maintenance</li>
+                            <li class="dbch-sisr">Technicien systèmes et réseaux</li>
+                            <li class="dbch-sisr">Technicien réseaux - télécoms</li>
+                        </ul>
+                    </div>
+                    <div class="option">
+                        <h3 class="slam"><i class="fa-solid fa-laptop-code"></i>OPTION SLAM</h3>
+                        <p class="box-slam">
+                            Le BTS SIO option SLAM (Solutions Logicielles et Applications Métiers) forme les étudiants dans trois domaines :
+                            Support et mise à disposition de services informatiques : l'étudiant apprend à répondre aux besoins des utilisateurs, gérer les services informatiques et accompagner la transformation numérique, tout en s'intégrant aux équipes projet.
+                            Cybersécurité des services informatiques : formation à l'analyse des risques et à la sécurisation des données, équipements et solutions applicatives.
+                            Conception et développement d'applications : l'étudiant acquiert des compétences en conception, développement, déploiement, maintenance d'applications (Web, mobile), gestion des bases de données et gestion de versions.
+                        </p>
+                        <h4 class="dbch">Voici les débouchés avec le BTS SIO option SLAM :</h4>
+                        <ul class="opt-dbch">
+                            <li class="dbch-sisr">Développeur d'applications informatiques</li>
+                            <li class="dbch-sisr">Développeur d’applications mobiles</li>
+                            <li class="dbch-sisr">Développeur Web</li>
+                            <li class="dbch-sisr">chargé d'études informatiques</li>
+                            <li class="dbch-sisr">Analyste programmeur</li>
+                            <li class="dbch-sisr">Technicien développement – exploitation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- Section Profil ----->
+    <section id="profil">
+        <div class="container">
+            <div id="about-me" class="about">
+                <div class="apdm">
+                    <h2 class="section-titre"> A propos de moi</h2>
+                    <p class="moi">
+                        <span class="text-alinea">Je</span> suis étudiant en deuxième année de <b>BTS SIO</b> (Services Informatiques aux Organisations) - Option <b>SISR</b> (Solutions infrastructures, Systèmes & Réseaux)
+                        au <b>Lycée Le Rebours</b> à Paris 13e. 
+                        J'ai toujours eu un fort intérêt pour l'informatique, donc j'ai décidé de suivre cette formation pour acquérir de nouvelles connaissances, compétences et expériences.
+                    </p>
+                </div>
+                <div class="info-personnel">
+                    <div class="cordonnees">
+                        <div class="cordonnees-items">
+                            <p>Email : <span>chaoui.haithem@icloud.com</span></p>
+                        </div>
+                        <div class="cordonnees-items">
+                            <p>Téléphone : <span>06 71 55 87 36</span></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="Pr-pro">
+                    <h3 class="projet-pro">- Projet Professionnel</h3>
+                    <p class="pp">
+                        <span class="text-alinea">Mon</span> projet professionnel est de devenir <b>Ingénieur systèmes et réseaux.</b>
+                        Après l'obtention de mon <b>BTS SIO</b>, je souhaiterais poursuivre mes études en <b>École d'ingénieur </b> dans le cadre d'une alternance. Cette voie me permettra de combiner enseignement théorique et expérience pratique,
+                        tout en développant des compétences techniques approfondies. Mon objectif est d'acquérir une expertise dans des domaines tels que
+                        l'architecture des systèmes d'information, l'administration systèmes & réseaux et la cybersécurité, afin de me préparer efficacement aux défis du secteur.
+                    </p>
+                </div>
+            </div>
+
+            <!------Section Certification----->
+            <section class="mes-certifications">
+                <div class="sct-titre">
+                    <h2 class="section-titre">Mes Certifications/Attestations</h2>
+                </div>
+            
+                <div class="certifications">
+                    <div class="certif-items">
+                        <div class="certif-img">
+                            <img src="img/secnumacademie_toque.png" alt="SecNum" width="100">
+                        </div>
+                        <div class="certif-contenu">
+                            <h4 class="certif-titre">SecNum</h4>
+                            <p>C'est un MOOC de l'ANSSI qui initie à la cybersécurité</p>
+                            <a href="img/Attestation SecNum.pdf" target="_blank">
+                                <button class="certif-btn">voir l'attestation</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="certif-items">
+                        <div class="certif-img">
+                            <img src="img/pix (1).png" alt="" width="100">
+                        </div>
+                        <div class="certif-contenu">
+                            <h4 class="certif-titre">PIX</h4>
+                            <p>C'est un outil d'évaluation en ligne des compétences numériques</p>
+                            <a href="img/attestation-pix-20241218 (1).pdf" target="_blank">
+                                <button class="certif-btn">voir l'attestation</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+
+
+        <!----- Section Parcours ----->
+        <section id="parcours"  class="parcours">
+            <div class="container">
+                <div class="section-parcours">
+                    <div class="sct-titre">
+                        <h2 class="section-titre">Mon Parcours</h2>
+
+                    </div>
+                    <div class="cursus">
+                        <h3 class="cursus-titre">Formations</h3>
+                        <div class="cursus-item">
+                            <h4><i class="fas fa-graduation-cap"></i>BTS SIO option SISR</h4>
+                            <h5>2023 - 2025</h5>
+                            <p>Lycée Le Rebours à Paris 75013</p>
+                        </div>
+                        <div class="cursus-item">
+                            <h4><i class="fas fa-graduation-cap"></i>BAC Général </h4>
+                            <h5>2019 - 2022</h5>
+                            <p>Lycée Diderot à Paris 75019</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    
+
+    <!-----Section Stages------>
+    <section id="stages"  class="stages">
+        <div class="container">
+            <div class="stages-bts">
+                <div class="sct-titre">
+                    <h2 class="section-titre">Stages</h2>
+                </div>
+                <div class="section-stages">
+                    <h3 class="stages-titre">Expériences professionnelles</h3>
+                    <div class="stages-items">
+                        <h4><i class="fa-solid fa-briefcase"></i>Stage 2ème année</h4>
+                        <h5>6 janvier - 14 février 2025</h5>
+                        <p>Groupe HTBS - Casablanca</p>
+                        <a href="#" target="_blank">
+                            <button class="voir-plus">RAPPORT DE STAGE</button>
+                        </a>
+                    </div>
+                    <div class="stages-items">
+                        <h4><i class="fa-solid fa-briefcase"></i>Stage 1ère année</h4>
+                        <h5>20 mai - 28 juin 2024</h5>
+                        <p> Paris 75012</p>
+                        <a href="">
+                            <button class="voir-plus">RAPPORT DE STAGE</button>
+                        </a>
+                    </div>
+                   <!-- <div class="stages-items">
+                        <h4><i class="fa-solid fa-briefcase"></i>Stage Technicien de maintenance</h4>
+                        <h5>mars - février 2023</h5>
+                        <p>Cyber Maintenance Informatique (CMI) - Montesson 78360</p>
+                        <ul>
+                            <li>Installation de PC</li>
+                            <li>Assemblage, réparation et dépannage d’ordinateur</li>
+                            <li>Résolution de problèmes : assistance aux utilisateurs</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------Section Compétences-------->
+    <section id="competences" class="competences">
+        <div class="container">
+            <div class="sct-titre">
+                <h2 class="section-titre">Mes Compétences</h2>
+                <p><span class="text-alinea">Les</span> connaissances acquises au cours de ma formation de BTS SIO et de mes expériences professionnelles m'ont permis de renforcer mes compétences en informatique notamment en administration systèmes et réseaux, en développement, en cybersécurité.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Réseaux</h3>
+                    <p>DHCP, DNS, VLAN, Modèle OSI, TCP/IP</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Active Directory & GPO</h3>
+                    <p>Administration des systèmes, des comptes</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Conteneurisation</h3>
+                    <p>Docker</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Virtualisation</h3>
+                    <p>VMWare, VirtualBox</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Analyse & Monitoring</h3>
+                    <p>Wireshark, Monitoring de serveurs, de conteneurs</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Systèmes d'exploitation</h3>
+                    <p>Windows, Linux</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Langages de programmation</h3>
+                    <p>Python, HTML, C/C++, JavaScript</p>
+                </div>
+                <div class="skill-category">
+                    <h3>CMS</h3>
+                    <p>WordPress</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Simulateur</h3>
+                    <p>CISCO Packet Tracer</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <!--------Section Outils/logiciels-------->
+        <section class="Outils-Logiciels">
+            <div class="container">
+                <div class="sct-titre">
+                    <h2 class="section-titre">Outils / logiciels utilisés</h2>
+                    <p class="outils-descrip">
+                        Les logiciels que j'ai utilisé dans le cadre de mon BTS.
+                    </p>
+                </div>
+                
+                <div class="outils">
+                    <div class="outils-items">
+                        <img src="img/packetTracer.png" alt="Packet Tracer">
+                        <h3>Packet Tracer</h3>
+                        <p>Simulateur de matériel réseau Cisco</p>
+                    </div>
+                    <div class="outils-items">
+                        <img src="img/wireshark.webp" alt="WireShark">
+                        <h3>WireShark</h3>
+                        <p>Analyseur de paquets libre et gratuit</p>
+                    </div>
+                    <div class="outils-items">
+                        <img src="img/VMware_Workstation_11.0_icon.png" alt="VMware">
+                        <h3>VMware</h3>
+                        <p>Outil de virtualisation de poste de travail</p>
+                    </div>
+                    <div class="outils-items">
+                        <img src="img/Virtualbox_logo.png" alt="VirtualBox">
+                        <h3>VirtualBox</h3>
+                        <p>Oracle VM VirtualBox, un logiciel libre de virtualisation</p>
+                    </div>
+                    <div class="outils-items">
+                        <img src="img/putty-logo.png" alt="PuTTy">
+                        <h3>PuTTy</h3>
+                        <p>Logiciel libre qui sert principalement à établir des connexions réseau sécurisées, souvent utilisées pour administrer à distance des serveurs</p>
+                    </div>
+                    <div class="outils-items">
+                        <img src="img/Visual_Studio_Code_1.35_icon.svg.png" alt="Visual Studio Code">
+                        <h3>Visual Studio Code</h3>
+                        <p>Un éditeur de code extensible développé par Microsoft</p>
+                    </div>
+                    <div class="outils-items">
+                        <img src="img/GitHub_Logo.png" alt="Visual Studio Code">
+                        <h3>Github</h3>
+                        <p>Plateforme de gestion et collaboration de code basée sur Git</p>
+                    </div>
+                    <div class="outils-items">
+                        <img src="img/docker.png" alt="Visual Studio Code">
+                        <h3>Docker</h3>
+                        <p>Aide les développeurs à créer, partager et exécuter des applications en conteneur</p>
+                    </div>
+                    <div class="outils-items">
+                        <img src="img/xampp-icon.png" alt="Visual Studio Code">
+                        <h3>XAMPP</h3>
+                        <p>Ensemble de logiciels permettant de mettre en place un serveur web local, un serveur FTP et un serveur messagerie électronique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-------Section MES PROJETS------->
+        <section class="projets" id="projets">
+            <div class="container">
+                <div class="sct-titre">
+                    <h2 class="section-titre">Mes Projets</h2>
+                    <p class="projet-descrip"><span class="text-alinea">Les</span> divers projets que j'ai réalisés au cours de ma formation en BTS SIO m'ont permis d'acquérir des compétences pratiques dans des domaines tels que le développement, l'administration de systèmes & réseaux. Ces projets ont été l'occasion de mettre en œuvre les connaissances théoriques acquises en classe dans des situations concrètes, renforçant ainsi mes compétences techniques et ma capacité à travailler en équipe sur des problématiques réelles.</p>
+                </div>
+      
+                <div class="projet-container">
+                    <div class="projets-items container-img">
+                        <img src="img/projet1.jpg" alt="Projet1" width="100" height="100">
+                        <div class="projets-title">
+                            <h3>Le Resto Normandie</h3>
+                            <p>Développement HTML, CSS et JS</p>
+                        </div>
+                        <div class="overlay-links">
+                            <a href="#"><i class="fa-solid fa-download" target="_blank"></i>Voir plus</a>
+                            <a href="https://lenormandie.000webhostapp.com/" target="_blank"><i class="fa-solid fa-link"></i>Lien du site</a>
+                        </div>
+                    </div>
+                    <div class="projets-items container-img">
+                        <img src="img/Capture d’écran 2025-03-17 à 10.30.41.png" alt="Projet2">
+                        <div class="projets-title">
+                            <h3>API Game.io</h3>
+                            <p>API et hébergement local</p>
+                        </div>
+                        <div class="overlay-links">
+                            <a href="img/API meal documentation.pdf" target="_blank"><i class="fa-solid fa-download"></i>Voir plus</a>
+                            <a href="file:///Users/haithemchaoui/Downloads/game.io%202/homepage.html" target="_blank"><i class="fa-solid fa-link"></i>Lien du site</a>
+                        </div>
+                    </div>
+                    <div class="projets-items container-img">
+                        <img src="img/projet STARTT.png" alt="Projet4">
+                        <div class="projets-title">
+                            <h3>STARTT Intérim</h3>
+                            <p>Site  avec wordpress</p>
+                        </div>
+                        <div class="overlay-links">
+                            <a href="img/startt_documentation.pdf" target="_blank"><i class="fa-solid fa-download"></i>Voir plus</a>
+                            <a href="https://www.wp-dhyt-sio2025.sio1-2lerebours.org/wordpress/" target="_blank"><i class="fa-solid fa-link"></i>Lien du site</a>
+                        </div>
+                    </div>
+                    <div class="projets-items container-img">
+                        <img src="img/projet3.jpg" alt="Projet3">
+                        <div class="projets-title">
+                            <h3>Monitoring</h3>
+                            <p>Monitoring d'un serveur web Nginx</p>
+                        </div>
+                        <div class="overlay-links">
+                            <a href="img/monitoring d'un serveur NGINX.pdf" target="_blank"><i class="fa-solid fa-download"></i>Voir plus</a>
+                            <a href="img/monitoring d'un serveur NGINX.pdf" target="_blank"><i class="fa-solid fa-link"></i>Télécharger</a>
+                        </div>
+                    </div>
+                    <div class="projets-items container-img">
+                        <img src="img/What-is-HSRP-in-Networking.jpeg" alt="Projet3">
+                        <div class="projets-title">
+                            <h3>Protocole HSRP</h3>
+                            <p>Mise en place du service HSRP</p>
+                        </div>
+                        <div class="overlay-links">
+                            <a href="img/HSRP documentation.pdf" target="_blank"><i class="fa-solid fa-download"></i>Voir plus</a>
+                            <a href="img/HSRP documentation.pdf" target="_blank"><i class="fa-solid fa-link"></i>Télécharger</a>
+                        </div>
+                    </div>
+                    <div class="projets-items container-img">
+                        <img src="img/image2.png" alt="Projet3">
+                        <div class="projets-title">
+                            <h3> PPE1 </h3>
+                            <p>Mise en place d'un Serveur Proxy</p>
+                        </div>
+                        <div class="overlay-links">
+                            <a href="img/Fiche de réalisation professionnelle 2-2.pdf" target="_blank"><i class="fa-solid fa-download"></i>Voir plus</a>
+                            <a href="img/Fiche de réalisation professionnelle 2-2.pdf" target="_blank"><i class="fa-solid fa-link"></i>Télécharger</a>
+                        </div>
+                    </div>
+                    <div class="projets-items container-img">
+                        <img src="img/0_CCK15OF3DizmOITk.png" alt="Projet3">
+                        <div class="projets-title">
+                            <h3> PPE2 </h3>
+                            <p>Stack web et Loadbalancer</p>
+                        </div>
+                        <div class="overlay-links">
+                            <a href="img/Fiche de realisation professionel 1.pdf" target="_blank"><i class="fa-solid fa-download"></i>Voir plus</a>
+                            <a href="img/Fiche de realisation professionel 1.pdf" target="_blank"><i class="fa-solid fa-link"></i>Télécharger</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------Section Veille Technologique------------------------>
+        <section class="section-veille" id="veille">
+            <div class="container">
+                <div class="sct-titre">
+                    <h2 class="section-titre">Veille Technologique</h2>
+                </div>
+                <div class="veille-techno">
+                    <h4><span class="text-alinea">Qu</span>'est-ce qu'une veille technologique ?</h4>
+                    <p>
+                        La veille technologique est un processus cyclique de gestion de l'information,
+                        tendant à l'automatisation, qui a pour objectif de connaître les nouveautés et les tendances 
+                        dans les domaines scientifiques et techniques. Une veille technologique est une démarche proactive 
+                        qui consiste à surveiller, analyser et recueillir des informations sur les évolutions et innovations
+                        technologiques d’un secteur ou d’un domaine précis. Son objectif principal est d’aider une organisation 
+                        ou un individu à anticiper les changements, saisir les opportunités, et éviter les risques liés aux 
+                        nouvelles technologies.
+                    </p>
+                    <h4><span class="text-alinea">Les</span> principaux outils de ma veille</h4>
+                    <p>
+                        J'ai réalisé ma veille technologique en utilisant des outils tels que <b>Feedly</b>, un agrégateur de flux RSS,
+                        et <b>Google Alertes</b>, qui permet de recevoir des notifications par e-mail sur des sujets spécifiques. Ces outils
+                        m'ont aidé à rester informé des dernières tendances et innovations dans mon domaine.
+                    </p>
+                    <h4><span class="text-alinea">Le</span> Sujet de ma veille technologique</h4>
+                    <p>
+                        Pour ma veille technologique, j'ai choisi de me concentrer sur les <b>attaques aux botnets </b>, avec pour thématique : 
+                        <b>Les botnets, une menace pour la sécurité des infrastructures réseau.</b>
+                    </p>
+                    <div class="veille-row-1">
+                        <center><b><h3>Qu'est-ce qu'un Botnet ?</h3></b></center>
+                        <p>
+                            Les <b>Botnet</b> sont des réseaux d'ordinateurs infectés par des logiciels malveillants et contrôlés à distance par un attaquant (appelé "botmaster"), permettant de mener diverses activités malveillantes à grande échelle sans le consentement des propriétaires des machines compromises.<br>
+                            <ul>
+                                <H4>Les trois principales utilisations ou fonctions des botnets:</H4>
+                                <li>Les attaques DDoS (Distributed Denial of Service).</li>
+                                <li>La diffusion de spam</li>
+                                <li>Le vol de données​</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="article-container">
+                        <center><b><h3>Les Botnets dans les infrastructures réseaux</h3></b></center>
+                        <div class="veille-row">
+                            <article class="articles">
+                                <div class="article-img"><img src="img/rise-botnet-ddos-2022.avif" alt="Post image" class="img"></div>
+                                <h4 class="article-titre">DDoS détécté par Nokia </h4>
+                                <p> Une attaque DDoS sans précédent détectée par Nokia
+                                    Nokia a récemment signalé une attaque DDoS d’une ampleur inédite, exploitant un botnet ultra-performant. Cette attaque est caractérisée par une puissance de frappe jamais vue, ce qui pose un réel défi aux infrastructures de défense traditionnelles.  
+                                    
+                                    Ce type d’attaque, alimenté par des botnets sophistiqués, pourrait gravement perturber les services numériques critiques, allant des plateformes cloud aux services financiers en ligne.  
+                                     </p>
+                                <div class="article-source">
+                                    <p><strong>Source :</strong> www.vietnam.vn</p>
+                                </div>
+                                <footer><a href="#" class="article-btn">Lire l'article</a></footer>
+                            </article>
+                            <article class="articles">
+                                <div class="article-img"><img src="img/HMN_030425_Satori-BADBOX-2_blog_1920x720_tech-report.webp" alt="Post image" class="img"></div>
+                                <h4 class="article-titre">Badbox 2.0</h4>
+                                <p>Un Botnet d’une ampleur inédite
+                                    Un botnet gigantesque, baptisé Badbox 2.0, a récemment été détecté. Il aurait infecté plus d’un million d’appareils Android, notamment des smartphones, tablettes et box TV connectées. Ce botnet est particulièrement dangereux car il prend le contrôle d’appareils dès leur sortie d’usine, grâce à des firmwares compromis avant leur commercialisation.  
+                                    
+                                    Ce réseau de machines infectées est ensuite utilisé pour diverses activités cybercriminelles, allant du vol de données personnelles aux attaques DDoS massives.  
+                                    </p>
+                                <div class="article-source">
+                                    <p><strong>Source :</strong> 01Net</p>
+                                </div>
+                                <footer><a href="#" class="article-btn">Lire l'article</a></footer>
+                            </article>
+                            <article class="articles">
+                                <div class="article-img"><img src="img/Formation-aux-objets-connectes-Cours-dirige-par-Thomas-Clausen-Credit-photographique.jpg" alt="Post image" class="img"></div>
+                                <h4 class="article-titre">Eleven11Bot </h4>
+                                <p>CUne nouvelle menace en expansion
+                                    Le botnet Eleven11Bot est en train de s’étendre rapidement, avec plus de 86 000 appareils infectés  recensés jusqu’à présent. Ce botnet se distingue par sa capacité à enchaîner les cyberattaques en un temps record.  
+                                    
+                                    Il exploite principalement des vulnérabilités dans les dispositifs IoT et les infrastructures cloud, ce qui le rend particulièrement redoutable. Sa propagation rapide en fait une menace critique pour les infrastructures réseaux modernes.  
+                                    </p>
+                                <div class="article-source">
+                                    <p><strong>Source :</strong> 01Net</p>
+                                </div>
+                                <footer><a href="#" class="article-btn">Lire l'article</a></footer>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------------Section CONTACT----------------------------------------->
+        <section class="section-contact" id="contact">
+            <div class="container">
+                <div class="sct-titre">
+                    <h2 class="section-titre">Contact</h2>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-items">
+                        <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>chaoui.haithem@icloud.com</p>
+                    </div>
+                    <div class="contact-items">
+                        <div class="contact-icon"><i class="fa fa-phone"></i></div>
+                        <h4>Téléphone</h4>
+                        <p>06 71 55 87 36</p>
+                    </div>
+                    <div class="contact-items">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <h4>Localisation</h4>
+                        <p>Paris 75012</p>
+                    </div>
+                </div>
+                <div class="formulaire">
+                    <div class="form-items col-6">
+                        <div class="contact-form">
+                            <label for="nom">Nom :</label>
+                            <input type="text" class="form-element" placeholder="Nom">
+                        </div>
+                    </div>
+                    <div class="form-items col-6">
+                        <div class="contact-form">
+                            <label for="email">Email :</label>
+                            <input type="email" class="form-element" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-items col-12">
+                        <div class="contact-form">
+                            <label for="message">Message :</label>
+                            <textarea id="message" placeholder="Votre message"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-items col-12">
+                        <button type="submit" class="btn-form">Envoyer</button>    
+                    </div>
+                </div>
+            </div>
+        </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-links">
+        <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
+        <a href="https://www.linkedin.com/in/haithem-chaoui-08a345329/" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+    </div>
+    <p>&copy; 2024 Chaoui Haithem. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
